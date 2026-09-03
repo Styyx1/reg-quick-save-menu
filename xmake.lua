@@ -1,9 +1,9 @@
 -- include subprojects
 includes("lib/commonlibsse", "extern/styyx-utils")
 
-local MOD_NAME = "PlaceHolder"
-local MOD_VERSION = "0.0.0"
-local MOD_DESC = "PlaceHolder"
+local MOD_NAME = "MenuRegularQuickSave"
+local MOD_VERSION = "1.1.0"
+local MOD_DESC = "Turns quick saves from within the menu to regular saves"
 
 -- set project constants
 set_project(MOD_NAME)
@@ -12,7 +12,7 @@ set_license("GPL-3.0")
 set_languages("c++23")
 set_warnings("allextra")
 
---{{ADDITIONAL CONFIGS}}--
+
 
 -- add common rules
 add_rules("mode.debug", "mode.releasedbg")
@@ -29,6 +29,4 @@ target(MOD_NAME)
 
     -- add src files
     add_files("src/**.cpp")
-    add_headerfiles("src/**.h")
-    add_includedirs("src")
     set_pcxxheader("src/pch.h")

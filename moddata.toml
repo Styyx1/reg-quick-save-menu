@@ -1,24 +1,8 @@
-name = "PlaceHolder"
-description = "PlaceHolder"
-modversion = "0.0.0"
-
+name = "MenuRegularQuickSave"
+description = "Turns quick saves from within the menu to regular saves"
+modversion = "1.1.0"
 
 [configs]
-commonlib_toml = true
 
 [structure]
-folders = ["config",
-"src/menu",
-"src/hooks",
-"src/events"]
 
-files = [
-"src/config/config.h",
-"src/config/config.cpp",
-"src/hooks/hooks.h",
-"src/hooks/hooks.cpp",
-"src/menu/menu-defines.h",
-"src/menu/menu-defines.cpp",
-"src/menu/sksemenu.h",
-"src/menu/sksemenu.h",
-]
